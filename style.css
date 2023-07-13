@@ -11,9 +11,13 @@ main {
     z-index: 1;
 }
 
-h1,h2,h3{
-    font-family:'Noto Serif Georgian', serif;;
+h1,
+h2,
+h3 {
+    font-family: 'Noto Serif Georgian', serif;
+    ;
 }
+
 /* HEADER */
 .container {
     position: sticky;
@@ -44,19 +48,25 @@ h1,h2,h3{
 }
 
 .logo img {
-    width: 17%;
+    width: 19%;
     padding: 0;
 }
 
-.logo-heading{
+.logo-heading {
     font-size: 2rem;
     font-family: 'Playfair Display', serif;
 }
 
 li {
     display: inline-block;
-    /* margin: 0 1.5rem; */
     padding: 2.5% 1vw;
+    border-radius: 20px;
+    /* box-shadow: -2px 2px 2px grey; */
+    transition:  box-shadow 0.7s;
+}
+li:hover{
+    box-shadow: -3px 3px 4px skyblue;
+
 }
 
 li a {
@@ -78,7 +88,7 @@ li a:hover {
 }
 
 .header-img img {
-    max-width: 79vw;
+    width: 79vw;
 }
 
 .heading {
@@ -87,71 +97,123 @@ li a:hover {
 }
 
 
-@media only screen and (max-width:700px){
-    main{
+@media only screen and (max-width:700px) {
+    main {
         max-width: 95vw;
     }
-    .logo{
+
+    .logo {
         display: block;
     }
-    .logo-heading{
+
+    .logo-heading {
         font-size: 1rem;
     }
-    .nav-bar{
+
+    .nav-bar {
         display: block;
     }
-    .logo img{
+
+    .logo img {
         width: 5%;
         display: grid;
     }
-    .nav-list li{
-        padding: 1% 5px;
+
+    .nav-list li {
+        padding: 1% 4px;
     }
-    .nav-list li a{
+
+    .nav-list li a {
         font-size: small;
     }
-    .header-img{
-        /* top:16%; */
+
+    .header-img {
+        top: 16%;
+        width: 100%;
     }
-    .heading h1{
+
+    .header-img img {
+        width: 90%;
+    }
+
+    .heading h1 {
         font-size: 1.3rem;
     }
-    .para h3{
+
+    .container2 {
+        box-shadow: -10px 10px 20px grey;
+
+    }
+
+    .container2 .img {
+        width: 70%;
+    }
+
+    #block {
+        display: block;
+    }
+
+    .para h3 {
         padding-top: 0;
     }
-    footer .copyright{
+
+    .container2 .para {
+        width: 99%;
+    }
+
+    main .available-courses {
+        width: 90%;
+        box-shadow: -10px -10px 20px 5px rgba(35, 167, 219, 0.5);
+        ;
+    }
+    button{
+        background-color: rgba(35, 167, 219, 0.5);
+    box-shadow: -2px 2px 6px black;
+    }
+
+    footer .copyright {
         font-size: 0.8rem;
     }
 }
-@media only screen and (max-width:1000px){
-    .header-img img{
-        width: 75vw; 
-    }
-}
+
 
 /* SECOND CONTAINER */
 .container2 {
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: flex;
     justify-content: space-between;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: box-shadow .4s;
+}
+
+.container2:hover {
+    box-shadow: -10px 10px 20px  rgb(152, 151, 151);
+
+}
+
+.odd {
+    flex-direction: row-reverse;
 }
 
 .img {
-    max-width: 49%;
+    width: 45%;
 }
 
 .img img {
-    max-width: 90%;
+    width: 100%;
     height: auto;
+    border-radius: 20px;
+
 }
 
 .img video {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 
 .para {
-    max-width: 50%;
+    width: 50%;
     height: auto;
     display: grid;
 }
@@ -182,7 +244,7 @@ table tr {
 
 thead tr {
     background-color: rgb(55, 165, 209);
-    
+
 }
 
 thead th {
@@ -247,8 +309,15 @@ thead th {
 .available-courses {
     width: 80%;
     margin: 0px auto;
+    background-color: rgba(35, 167, 219, 0.2);
+    transition: box-shadow 1s;
+    
 }
 
+.available-courses:hover {
+    box-shadow: -10px -10px 20px 5px rgba(35, 167, 219, 0.5);
+    ;
+}
 h1,
 h3 {
     font-family: 'Playfair Display', serif;
@@ -258,6 +327,7 @@ h3 {
 
 .main-para {
     line-height: 1.3em;
+    opacity: 0.9;
 }
 
 .description {
@@ -268,13 +338,16 @@ button {
     display: flex;
     margin: 0px auto;
     padding: 1.5% 1%;
+    border: 1px solid rgba(179, 225, 244, 0.2);
     border-radius: 20px;
-    background-color: white;
+    background-color: rgba(179, 225, 244, 0.5);
+    transition: box-shadow  0.5s;
+
 }
 
-button:hover, button a:hover {
-    background-color: rgb(55, 165, 209);
-    color: #eaeaea
+button:hover{
+    background-color: rgba(35, 167, 219, 0.5);
+    box-shadow: -2px 2px 6px black;
 }
 
 button a {
@@ -289,9 +362,7 @@ button a {
     border-radius: 5px;
 }
 
-.available-courses {
-    background-color: rgba(35, 167, 219, 0.2);
-}
+
 
 /* footer */
 footer {
@@ -306,4 +377,3 @@ footer {
     font-size: 1.3rem;
     padding: 1rem 0;
 }
-
