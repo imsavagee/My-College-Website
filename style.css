@@ -29,7 +29,6 @@ h3 {
 
 .nav-bar {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
 }
 
@@ -61,10 +60,10 @@ li {
     display: inline-block;
     padding: 2.5% 1vw;
     border-radius: 20px;
-    /* box-shadow: -2px 2px 2px grey; */
-    transition:  box-shadow 0.7s;
+    transition: box-shadow 0.7s;
 }
-li:hover{
+
+li:hover {
     box-shadow: -3px 3px 4px skyblue;
 
 }
@@ -101,7 +100,7 @@ li a:hover {
     main {
         max-width: 95vw;
     }
-
+    
     .logo {
         display: block;
     }
@@ -140,35 +139,40 @@ li a:hover {
         font-size: 1.3rem;
     }
 
-    .container2 {
-        box-shadow: -10px 10px 20px grey;
+    .container2{
+        box-shadow: -8px 8px 20px grey;
+        margin: 2.5rem 0;
 
     }
 
     .container2 .img {
-        width: 70%;
+        width: 85%;
+        height: 100%;
     }
 
     #block {
         display: block;
+        padding: 16px;
+
     }
 
     .para h3 {
-        padding-top: 0;
+        padding-top: 1rem;
     }
 
     .container2 .para {
         width: 99%;
     }
-
+    
     main .available-courses {
-        width: 90%;
+        width: 80%;
         box-shadow: -10px -10px 20px 5px rgba(35, 167, 219, 0.5);
         ;
     }
-    button{
+
+    button {
         background-color: rgba(35, 167, 219, 0.5);
-    box-shadow: -2px 2px 6px black;
+        box-shadow: -2px 2px 6px black;
     }
 
     footer .copyright {
@@ -181,13 +185,15 @@ li a:hover {
 .container2 {
     display: flex;
     justify-content: space-between;
+    margin: 3rem 0;
+
     padding: 2rem;
     border-radius: 2rem;
     transition: box-shadow .4s;
 }
 
 .container2:hover {
-    box-shadow: -10px 10px 20px  rgb(152, 151, 151);
+    box-shadow: -10px 10px 20px rgb(152, 151, 151);
 
 }
 
@@ -196,7 +202,7 @@ li a:hover {
 }
 
 .img {
-    width: 45%;
+    width: 50%;
 }
 
 .img img {
@@ -311,13 +317,14 @@ thead th {
     margin: 0px auto;
     background-color: rgba(35, 167, 219, 0.2);
     transition: box-shadow 1s;
-    
+
 }
 
 .available-courses:hover {
     box-shadow: -10px -10px 20px 5px rgba(35, 167, 219, 0.5);
     ;
 }
+
 h1,
 h3 {
     font-family: 'Playfair Display', serif;
@@ -341,11 +348,11 @@ button {
     border: 1px solid rgba(179, 225, 244, 0.2);
     border-radius: 20px;
     background-color: rgba(179, 225, 244, 0.5);
-    transition: box-shadow  0.5s;
+    transition: box-shadow 0.5s;
 
 }
 
-button:hover{
+button:hover {
     background-color: rgba(35, 167, 219, 0.5);
     box-shadow: -2px 2px 6px black;
 }
@@ -358,7 +365,6 @@ button a {
 
 .submit-button {
     padding: 5px 2rem;
-    /* border: 2px solid white; */
     border-radius: 5px;
 }
 
